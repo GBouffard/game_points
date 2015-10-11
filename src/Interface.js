@@ -26,4 +26,11 @@ $( document ).ready(function() {
     $('#c_score').text(game.c_items * 20);
     update_total();
   });
+
+  $('#item_d').click(function() {
+    game.add_item('D');
+    $('#d_quantity').text(game.d_items);
+    $('#d_score').text(game.d_items * 15);
+    update_total();
+  });
 }); 

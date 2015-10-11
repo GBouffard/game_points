@@ -45,7 +45,11 @@ describe('Interface', function() {
     expect($('#total_score')).toHaveText('240');
   });
 
-  xit('outputs the right quantity, score, bonus and total score for D when D is clicked multiple times', function(){
+  it('outputs the right quantity, score, bonus and total score for D when D is clicked multiple times', function(){
+    for(n=0;n<11;n++){ $('#item_d').click(); }
+    expect($('#d_quantity')).toHaveText('11');
+    expect($('#d_score')).toHaveText('165'); 
+    expect($('#total_score')).toHaveText('165');
   });
 
   xit('clears the whole table when the new game button is being clicked', function(){
