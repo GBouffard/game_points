@@ -26,7 +26,10 @@ describe('Interface', function() {
     expect($('#scores_box')).toHaveText('450');
   });
 
-  xit('updates total score and total bonus when A is clicked multiple times', function(){
+  it('updates total score and total bonus when A is clicked multiple times', function(){
+    for(n=0;n<6;n++){ $('#item_a').click(); }
+    expect($('#total_bonus')).toHaveText('100');  
+    expect($('#total_score')).toHaveText('400');  
   });
 
   xit('outputs B, C and D in the player s items list (as well as well as their quantities and scores) when clicked', function(){
