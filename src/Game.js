@@ -4,6 +4,7 @@ function Game() {
   this.b_items = 0;
   this.c_items = 0;
   this.d_items = 0;
+  this.bonus = 0;
 }
 
 Game.prototype.add_item = function(item) {
@@ -25,12 +26,22 @@ Game.prototype.add_D_items = function() {
 
 Game.prototype.add_A_items = function() {
   this.a_items ++; 
-  if (this.a_items % 3 === 0) { this.score = this.score + 100; }
+  if (this.a_items % 3 === 0) { this.bonus_A(); }
   else { this.score = this.score + 50; }
 };
 
 Game.prototype.add_B_items = function() {
   this.b_items ++; 
-  if (this.b_items % 2 === 0) { this.score = this.score + 60; }
+  if (this.b_items % 2 === 0) { this.bonus_B(); }
   else { this.score = this.score + 30; }
+};
+
+Game.prototype.bonus_A = function() {
+  this.score = this.score + 100;
+  this.bonus = this.bonus + 50;
+};
+
+Game.prototype.bonus_B = function() {
+  this.score = this.score + 60;
+  this.bonus = this.bonus + 30;
 };

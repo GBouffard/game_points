@@ -79,6 +79,16 @@ describe('Game', function() {
     expect(game.score).toEqual(515);
   });
 
+  it('calculates and knows the bonus for A items', function() {
+    for(n=0;n<13;n++) { game.add_item('A'); }
+    expect(game.bonus).toEqual(200);
+  });
+
+  it('calculates and knows the bonus for B items', function() {
+    for(n=0;n<13;n++) { game.add_item('B'); }
+    expect(game.bonus).toEqual(180);
+  });
+
   xit('calculates and knows the total bonus', function() {
   });
 
