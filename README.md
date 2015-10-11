@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/GBouffard/game_points.svg)](https://travis-ci.org/GBouffard/game_points) 
+
 :abcd: Game Points :abcd:
 ===
 simple browser based game points system that calculates the total points awarded to a player for a number of items they have collected in a game.
@@ -30,7 +32,7 @@ npm start
 By opening your browser on http://localhost:3000, you can now you can play with the game.
 Here is a screenshot of what the app looks like:
 
-![](public/images/game_points_Screenshot_to_come.png)
+![](public/gp_screenshot.png)
 
 How to run tests
 ----
@@ -45,4 +47,4 @@ and this is what you should see:
 
 What I learnt and what to improve
 ----
-It took me roughly 7-8 hours to complete that exercise (if we exempt the diverse interruptions that happen when one works at home) and it was especially a good reminder for me on how to use jQuery. I would be keen to refactor everything and make everything shorter and quicker but I would probably need more time. I could also have fiddle a bit more with the HTML & CSS but I did want to focus first on meeting the main specifications of the project before moving into this.
+It took me roughly 7-8 hours to complete that exercise (if we exempt the diverse interruptions that happen when one works at home) and it was especially a good reminder for me on how to use jQuery. I would be keen to refactor everything and make everything shorter and quicker but I would probably need more time. I could also have fiddle a bit more with the HTML & CSS to make it much nicer. I also would use some correct positionning on some elements but I did want to focus first on meeting the main specifications of the project before moving into this; and it all works and is tested, which is what matters in the first place.
