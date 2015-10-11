@@ -38,10 +38,14 @@ describe('Interface', function() {
     expect($('#total_score')).toHaveText('300');  
   });
 
-  xit('updates the total score as items are being added', function(){
+  it('outputs the right quantity, score, bonus and total score for C when C is clicked multiple times', function(){
+    for(n=0;n<12;n++){ $('#item_c').click(); }
+    expect($('#c_quantity')).toHaveText('12');
+    expect($('#c_score')).toHaveText('240'); 
+    expect($('#total_score')).toHaveText('240');
   });
 
-  xit('updates the total bonus as items are being added', function(){
+  xit('outputs the right quantity, score, bonus and total score for D when D is clicked multiple times', function(){
   });
 
   xit('clears the whole table when the new game button is being clicked', function(){

@@ -19,4 +19,11 @@ $( document ).ready(function() {
     $('#b_score').text(game.total_b);
     update_total();
   });
+
+  $('#item_c').click(function() {
+    game.add_item('C');
+    $('#c_quantity').text(game.c_items);
+    $('#c_score').text(game.c_items * 20);
+    update_total();
+  });
 }); 
