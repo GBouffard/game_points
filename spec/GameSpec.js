@@ -51,10 +51,16 @@ describe('Game', function() {
     expect(game.score).toEqual(90);
   });
 
-  xit('tracks the number of A items and calculates the right accumulator of A items', function() {
+  it('tracks the number of A items and calculates the right accumulator of A items', function() {
+    for(n=0;n<16;n++) { game.add_item('A'); }
+    expect(game.score).toEqual(1050);
+    expect(game.a_items).toEqual(16);  
   });
 
-  xit('tracks the number of B items and calculates the right accumulator of B items', function() {
+  it('tracks the number of B items and calculates the right accumulator of B items', function() {
+    for(n=0;n<13;n++) { game.add_item('B'); }
+    expect(game.score).toEqual(570);
+    expect(game.b_items).toEqual(13);  
   });
 
   xit('calculates and knows the total score', function() {
