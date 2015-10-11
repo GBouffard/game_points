@@ -64,18 +64,7 @@ describe('Game', function() {
   });
 
   it('calculates and knows the total score', function() {
-    game.add_item('B');
-    game.add_item('A');
-    game.add_item('B');
-    game.add_item('C');
-    game.add_item('C');
-    game.add_item('B');
-    game.add_item('D');
-    game.add_item('B');
-    game.add_item('A');
-    game.add_item('A');
-    game.add_item('A');
-    game.add_item('B');
+    random_game();
     expect(game.score).toEqual(515);
   });
 
@@ -89,9 +78,28 @@ describe('Game', function() {
     expect(game.bonus).toEqual(180);
   });
 
-  xit('calculates and knows the total bonus', function() {
+  it('calculates and knows the total bonus', function() {
+    random_game();
+    expect(game.bonus).toEqual(110);
   });
 
   xit('has a reset button to start a new game', function() {
   });
+
+  function random_game() {
+    game.add_item('B');
+    game.add_item('A');
+    game.add_item('B');
+    game.add_item('C');
+    game.add_item('C');
+    game.add_item('B');
+    game.add_item('D');
+    game.add_item('B');
+    game.add_item('A');
+    game.add_item('A');
+    game.add_item('A');
+    game.add_item('B');
+  }
 });
+
+
