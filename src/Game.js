@@ -3,6 +3,7 @@ function Game() {
   this.a_items = 0;
   this.total_a = 0;
   this.b_items = 0;
+  this.total_b = 0;
   this.c_items = 0;
   this.d_items = 0;
   this.bonus = 0;
@@ -34,6 +35,7 @@ Game.prototype.add_A_items = function() {
 
 Game.prototype.add_B_items = function() {
   this.b_items ++; 
+  this.total_b = this.total_b + 30;
   if (this.b_items % 2 === 0) { this.bonus_B(); }
   else { this.score = this.score + 30; }
 };
@@ -46,6 +48,7 @@ Game.prototype.bonus_A = function() {
 
 Game.prototype.bonus_B = function() {
   this.score = this.score + 60;
+  this.total_b = this.total_b + 30;
   this.bonus = this.bonus + 30;
 };
 
@@ -54,6 +57,7 @@ Game.prototype.reset_game = function() {
   this.a_items = 0;
   this.total_a = 0;
   this.b_items = 0;
+  this.total_b = 0;
   this.c_items = 0;
   this.d_items = 0;
   this.bonus = 0;

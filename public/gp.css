@@ -19,7 +19,7 @@ table {
   margin-top:2%;
   width: 90%;
   height: 90%;
-  font-size: 14px;
+  font-size: 17px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,6 +53,11 @@ th, td {
 
 .last_rows {
   height: 15%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.letter_size {
   font-size: 20px;
   font-weight: bold;
 }

@@ -8,9 +8,15 @@ $( document ).ready(function() {
 
   $('#item_a').click(function() {
     game.add_item('A');
-    $('#items_box').text('A');
-    $('#quantities_box').text(game.a_items);
-    $('#scores_box').text(game.total_a);
+    $('#a_quantity').text(game.a_items);
+    $('#a_score').text(game.total_a);
+    update_total();
+  });
+
+  $('#item_b').click(function() {
+    game.add_item('B');
+    $('#b_quantity').text(game.b_items);
+    $('#b_score').text(game.total_b);
     update_total();
   });
 }); 

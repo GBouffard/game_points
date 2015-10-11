@@ -7,23 +7,21 @@ describe('Interface', function() {
   });
 
   it('has no collected items in the list & 0 as score and bonus when initialised', function(){
-      expect("#items_box").toBeEmpty();
-      expect("#quantities_box").toBeEmpty();
-      expect("#scores_box").toBeEmpty();
+      expect("#a_quantity").toBeEmpty();
+      expect("#a_score").toBeEmpty();
       expect("#total_bonus").toHaveText(0);
       expect("#total_score").toHaveText(0);
   });
 
   it('outputs A in the player s items list (as well as quantity 1) when item A is clicked once', function(){
     $('#item_a').click();
-    expect($('#items_box')).toHaveText('A');
-    expect($('#quantities_box')).toHaveText('1');
+    expect($('#a_quantity')).toHaveText('1');
   });
 
   it('updates score and quantities of the A items in the list when A is clicked multiple times', function(){
     for(n=0;n<7;n++){ $('#item_a').click(); }
-    expect($('#quantities_box')).toHaveText('7');
-    expect($('#scores_box')).toHaveText('450');
+    expect($('#a_quantity')).toHaveText('7');
+    expect($('#a_score')).toHaveText('450');
   });
 
   it('updates total score and total bonus when A is clicked multiple times', function(){
@@ -32,7 +30,12 @@ describe('Interface', function() {
     expect($('#total_score')).toHaveText('400');  
   });
 
-  xit('outputs B, C and D in the player s items list (as well as well as their quantities and scores) when clicked', function(){
+  it('like done for A, outputs the right quantity, score, bonus and total score for B when B is clicked multiple times', function(){
+    for(n=0;n<7;n++){ $('#item_b').click(); }
+    expect($('#b_quantity')).toHaveText('7');
+    expect($('#b_score')).toHaveText('300');
+    expect($('#total_bonus')).toHaveText('90');  
+    expect($('#total_score')).toHaveText('300');  
   });
 
   xit('updates the total score as items are being added', function(){
