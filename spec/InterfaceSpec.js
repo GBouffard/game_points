@@ -14,7 +14,10 @@ describe('Interface', function() {
       expect("#total_score").toHaveText(0);
   });
 
-  xit('outputs A in the player s items list (as well as quantity 1) when item A is clicked once', function(){
+  it('outputs A in the player s items list (as well as quantity 1) when item A is clicked once', function(){
+    $('#item_a').click();
+    expect($('#items_box')).toHaveText('A');
+    expect($('#quantities_box')).toHaveText('1');
   });
 
   xit('updates score and quantities of the A items in the list when A is clicked multiple times', function(){
