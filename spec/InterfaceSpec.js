@@ -6,14 +6,20 @@ describe('Interface', function() {
     $.holdReady(false);
   });
 
-  it('has no collected items in the list & 0 as score and bonus when initialised', function(){
-      expect("#a_quantity").toBeEmpty();
-      expect("#a_score").toBeEmpty();
-      expect("#total_bonus").toHaveText(0);
-      expect("#total_score").toHaveText(0);
+  it('has no collected items in the list and score and bonus of 0 when initialised', function(){
+    expect("#a_quantity").toBeEmpty();
+    expect("#a_score").toBeEmpty();
+    expect("#b_quantity").toBeEmpty();
+    expect("#b_score").toBeEmpty();
+    expect("#c_quantity").toBeEmpty();
+    expect("#c_score").toBeEmpty();
+    expect("#d_quantity").toBeEmpty();
+    expect("#d_score").toBeEmpty();
+    expect("#total_bonus").toHaveText(0);
+    expect("#total_score").toHaveText(0);
   });
 
-  it('outputs A in the player s items list (as well as quantity 1) when item A is clicked once', function(){
+  it('outputs 1 in the A quantity when item A is clicked once', function(){
     $('#item_a').click();
     expect($('#a_quantity')).toHaveText('1');
   });

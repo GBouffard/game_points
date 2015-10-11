@@ -41,13 +41,8 @@ open SpecRunner.html
 
 and this is what you should see:
 
-![](public/images/Jasmine_Screenshot_to_come.png)
+![](public/Jasmine_screenshot.png)
 
-What I learnt
+What I learnt and what to improve
 ----
-- x
-- x
-
-What to improve
-----
-- x
+It took me roughly 7-8 hours to complete that exercise (if we exempt the diverse interruptions that happen when one works at home) and it was especially a good reminder for me on how to use jQuery. I would be keen to refactor everything and make everything shorter and quicker but I would probably need more time. I could also have fiddle a bit more with the HTML & CSS but I did want to focus first on meeting the main specifications of the project before moving into this.
