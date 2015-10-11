@@ -6,6 +6,17 @@ $( document ).ready(function() {
     $('#total_bonus').text(game.bonus);
   };
 
+ function reset_all_items() {
+    $("#a_quantity").text('');
+    $("#a_score").text('');
+    $("#b_quantity").text('');
+    $("#b_score").text('');
+    $("#c_quantity").text('');
+    $("#c_score").text('');
+    $("#d_quantity").text('');
+    $("#d_score").text('');
+  };
+
   $('#item_a').click(function() {
     game.add_item('A');
     $('#a_quantity').text(game.a_items);
@@ -31,6 +42,12 @@ $( document ).ready(function() {
     game.add_item('D');
     $('#d_quantity').text(game.d_items);
     $('#d_score').text(game.d_items * 15);
+    update_total();
+  });
+
+  $('#new_game').click(function() {
+    game.reset_game();
+    reset_all_items();
     update_total();
   });
 }); 

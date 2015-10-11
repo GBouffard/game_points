@@ -52,6 +52,21 @@ describe('Interface', function() {
     expect($('#total_score')).toHaveText('165');
   });
 
-  xit('clears the whole table when the new game button is being clicked', function(){
+  it('clears the whole table when the new game button is being clicked', function(){
+    $('#item_a').click();
+    $('#item_b').click();
+    $('#item_c').click();
+    $('#item_d').click();
+    $('#new_game').click();
+    expect("#a_quantity").toBeEmpty();
+    expect("#a_score").toBeEmpty();
+    expect("#b_quantity").toBeEmpty();
+    expect("#b_score").toBeEmpty();
+    expect("#c_quantity").toBeEmpty();
+    expect("#c_score").toBeEmpty();
+    expect("#d_quantity").toBeEmpty();
+    expect("#d_score").toBeEmpty();
+    expect("#total_bonus").toHaveText(0);
+    expect("#total_score").toHaveText(0);    
   });
 });
