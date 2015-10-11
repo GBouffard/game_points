@@ -46,7 +46,9 @@ describe('Game', function() {
     expect(game.score).toEqual(200);
   });
 
-  xit('knows that there is a bonus on B and adds 90 points for 2 B items', function() {
+  it('knows that there is a bonus on B and adds 90 points for 2 B items', function() {
+    for(n=0;n<2;n++) { game.add_item('B'); }
+    expect(game.score).toEqual(90);
   });
 
   xit('tracks the number of A items and calculates the right accumulator of A items', function() {
