@@ -83,7 +83,10 @@ describe('Game', function() {
     expect(game.bonus).toEqual(110);
   });
 
-  xit('has a reset button to start a new game', function() {
+  it('has a reset button to start a new game', function() {
+    random_game();
+    game.reset_game();
+    expect(game.score).toEqual(0);  
   });
 
   function random_game() {

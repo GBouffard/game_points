@@ -45,3 +45,12 @@ Game.prototype.bonus_B = function() {
   this.score = this.score + 60;
   this.bonus = this.bonus + 30;
 };
+
+Game.prototype.reset_game = function() {
+  this.score = 0;
+  this.a_items = 0;
+  this.b_items = 0;
+  this.c_items = 0;
+  this.d_items = 0;
+  this.bonus = 0;
+};
