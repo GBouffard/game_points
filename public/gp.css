@@ -1,0 +1,58 @@
+body {
+  font-family: Helvetica, Arial, Sans-serif;
+  text-align:center;
+  font-size: 15px;
+  line-height: 21px;
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: black;   
+}
+
+html, body {
+  height: 100%;
+}
+
+table {
+  position:relative;
+  margin-top:2%;
+  width: 90%;
+  height: 90%;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+tbody {
+  background-color: #8E8E8E;
+  font-weight: thin;
+}
+
+th {
+  width: 50%;
+}
+
+th, td {
+  border:5px solid black;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+#collected_items_table_header {
+  height: 10%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.last_rows {
+  height: 15%;
+  font-size: 20px;
+  font-weight: bold;
+}
