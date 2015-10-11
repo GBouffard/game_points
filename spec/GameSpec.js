@@ -5,7 +5,8 @@ describe('Game', function() {
     game = new Game();
   });
 
-  xit('starts with a score of 0', function() {
+  it('starts with a score of 0', function() {
+    expect(game.score).toEqual(0);
   });
 
   xit('knows that a single item A adds 50 points', function() {
