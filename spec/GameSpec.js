@@ -63,7 +63,20 @@ describe('Game', function() {
     expect(game.b_items).toEqual(13);  
   });
 
-  xit('calculates and knows the total score', function() {
+  it('calculates and knows the total score', function() {
+    game.add_item('B');
+    game.add_item('A');
+    game.add_item('B');
+    game.add_item('C');
+    game.add_item('C');
+    game.add_item('B');
+    game.add_item('D');
+    game.add_item('B');
+    game.add_item('A');
+    game.add_item('A');
+    game.add_item('A');
+    game.add_item('B');
+    expect(game.score).toEqual(515);
   });
 
   xit('calculates and knows the total bonus', function() {
