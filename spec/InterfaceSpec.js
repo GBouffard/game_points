@@ -20,7 +20,10 @@ describe('Interface', function() {
     expect($('#quantities_box')).toHaveText('1');
   });
 
-  xit('updates score and quantities of the A items in the list when A is clicked multiple times', function(){
+  it('updates score and quantities of the A items in the list when A is clicked multiple times', function(){
+    for(n=0;n<7;n++){ $('#item_a').click(); }
+    expect($('#quantities_box')).toHaveText('7');
+    expect($('#scores_box')).toHaveText('450');
   });
 
   xit('updates total score and total bonus when A is clicked multiple times', function(){
