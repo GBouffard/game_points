@@ -13,7 +13,7 @@ Game.prototype.add_item = function(item) {
   if (item === 'A') { this.add_A_items(); }
   else if (item === 'B') { this.add_B_items(); }
   else if (item === 'C') { this.add_C_items(); }
-  else if (item === 'D') { this.add_D_items();};
+  else if (item === 'D') { this.add_D_items(); }
 };
 
 Game.prototype.add_C_items = function() {

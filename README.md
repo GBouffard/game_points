@@ -18,6 +18,7 @@ Our points system accepts items in any order, so that if we collect a B, an A, a
 Technologies used
 ----
 - Javascript
+- JQuery
 - Jasmine
 - HTML & CSS
 
@@ -47,4 +48,4 @@ and this is what you should see:
 
 What I learnt and what to improve
 ----
-It took me roughly 7-8 hours to complete that exercise (if we exempt the diverse interruptions that happen when one works at home) and it was especially a good reminder for me on how to use jQuery. I would be keen to refactor everything and make everything shorter and quicker but I would probably need more time. I could also have fiddle a bit more with the HTML & CSS to make it much nicer. I also would use some correct positionning on some elements but I did want to focus first on meeting the main specifications of the project before moving into this; and it all works and is tested, which is what matters in the first place.
+It took me roughly 7-8 hours to complete the exercise (if we exempt the diverse interruptions that happen when one works at home. There were many). It was especially a good reminder for me on how to use jQuery. I would be keen to refactor everything and make everything shorter and quicker but I would probably need more time. I could also have fiddled a bit more with HTML & CSS. (especially with the positionning of the elements and more colours and nicer images). Still I did want to focus first on meeting the main project's specifications before anything else; it all works and is fully tested.
