@@ -14,13 +14,19 @@ describe('Game', function() {
     expect(game.score).toEqual(50);
   });
 
-  xit('knows that a single item B adds 30 points', function() {
+  it('knows that a single item B adds 30 points', function() {
+    game.add_item('B');
+    expect(game.score).toEqual(30);
   });
 
-  xit('knows that a single item C adds 20 points', function() {
+  it('knows that a single item C adds 20 points', function() {
+    game.add_item('C');
+    expect(game.score).toEqual(20);
   });
 
-  xit('knows that a single item D adds 15 points', function() {
+  it('knows that a single item D adds 15 points', function() {
+    game.add_item('D');
+    expect(game.score).toEqual(15);
   });
 
   xit('tracks the number of C items and adds 20 points to the score for each of them', function() {
