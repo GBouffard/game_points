@@ -8,8 +8,8 @@ We’ll use individual letters of the alphabet to identify the items (A, B, C, a
 | ------------ | ----------- | ----------- |
 | A | 50 | 200 for 3 |
 | B | 30 | 90 for 2 |
-| 20 |  |   |
-| 15 |  |   |
+| C | 20 |   |
+| D | 15 |   |
 
 Our points system accepts items in any order, so that if we collect a B, an A, and another B, we’ll recognise the two B’s and score them at 90 (for a total score so far of 140).
 
