@@ -41,7 +41,9 @@ describe('Game', function() {
     expect(game.d_items).toEqual(11);
   });
 
-  xit('knows that there is a bonus on A and adds 200 points for 3 A items', function() {
+  it('knows that there is a bonus on A and adds 200 points for 3 A items', function() {
+    for(n=0;n<3;n++) { game.add_item('A'); }
+    expect(game.score).toEqual(200);
   });
 
   xit('knows that there is a bonus on B and adds 90 points for 2 B items', function() {
