@@ -9,7 +9,9 @@ describe('Game', function() {
     expect(game.score).toEqual(0);
   });
 
-  xit('knows that a single item A adds 50 points', function() {
+  it('knows that a single item A adds 50 points', function() {
+    game.add_item('A');
+    expect(game.score).toEqual(50);
   });
 
   xit('knows that a single item B adds 30 points', function() {
